@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios, { AxiosResponse } from "axios";
-import Header from "../components/Header";
-import { ListaDeProdutos, Img, Linha, Valor, ButtonCompra, DivButton, ImgProximo } from "./AppStyles";
+import Header from "./components/Header";
+import { ListaDeProdutos, Img, Linha, Valor, ButtonCompra, DivButton, ImgProximo } from "./page/AppStyles";
 import proximo from '../assets/proximo.png'
 import anterior from '../assets/anterior.png'
 interface Product {
