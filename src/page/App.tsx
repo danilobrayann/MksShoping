@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios, { AxiosResponse } from "axios";
-import Header from "./components/Header";
-import { ListaDeProdutos, Img, Linha, Valor, ButtonCompra, DivButton, ImgProximo } from "./page/AppStyles";
+import Header from "../components/Header";
+import { ListaDeProdutos, Img, Linha, Valor, ButtonCompra, DivButton, ImgProximo } from "./AppStyles";
 import proximo from '../assets/proximo.png'
 import anterior from '../assets/anterior.png'
 interface Product {
@@ -16,7 +16,7 @@ function App() {
   const [products, setProducts] = useState<Product[]>([]);
   const [page, setPage] = useState(1);
   const [rows, setRows] = useState(5);
-
+console.log(setRows)
   useEffect(() => {
     const fetchData = async () => {
       try {
